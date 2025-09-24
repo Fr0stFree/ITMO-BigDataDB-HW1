@@ -1,0 +1,10 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: postgres
+    environment:
+      POSTGRES_USER: bigdata
+      POSTGRES_PASSWORD: bigdata_password
+      POSTGRES_DB: bigdata_db
+    ports:
+      - "5432:5432"
